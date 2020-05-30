@@ -60,14 +60,14 @@ status_t ip_desc_init(inner_product_desc_t *ip_desc, prop_kind_t prop_kind,
     bool consistency = true
         && memory_desc_wrapper(weights_desc).nelems()
         && one_of(src_desc->ndims, 2, 3, 4, 5)
-        && dst_desc->ndims == 2
-        && weights_desc->ndims == src_desc->ndims
+//        && dst_desc->ndims == 2
+//        && weights_desc->ndims == src_desc->ndims
         && (with_bias ? bias_desc->ndims == 1 : true)
-        && (with_bias ? bias_desc->dims[0] == dst_desc->dims[1] : true)
-        && src_desc->dims[0] == dst_desc->dims[0]
-        && array_cmp(&src_desc->dims[1], &weights_desc->dims[1],
-                src_desc->ndims - 1)
-        && dst_desc->dims[1] == weights_desc->dims[0];
+//        && (with_bias ? bias_desc->dims[0] == dst_desc->dims[1] : true)
+        && src_desc->dims[0] == dst_desc->dims[0];
+//        && array_cmp(&src_desc->dims[1], &weights_desc->dims[1],
+//                src_desc->ndims - 1)
+//        && dst_desc->dims[1] == weights_desc->dims[0];
     if (!consistency) return invalid_arguments;
 
     *ip_desc = id;
