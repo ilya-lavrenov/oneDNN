@@ -19,7 +19,7 @@
 
 #include <assert.h>
 #include <string>
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 #include "gpu/compute/compute.hpp"
 #include "gpu/ocl/ocl_utils.hpp"

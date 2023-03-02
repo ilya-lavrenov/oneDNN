@@ -17,7 +17,7 @@
 #ifndef GPU_OCL_OCL_GPU_HW_INFO_HPP
 #define GPU_OCL_OCL_GPU_HW_INFO_HPP
 
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 #include "common/c_types_map.hpp"
 #include "gpu/compute/device_info.hpp"

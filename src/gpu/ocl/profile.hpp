@@ -14,7 +14,7 @@
 * limitations under the License.
 *******************************************************************************/
 
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 #include "common/c_types_map.hpp"
 

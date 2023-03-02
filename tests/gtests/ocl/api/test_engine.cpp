@@ -21,7 +21,7 @@
 #include "oneapi/dnnl/dnnl_ocl.hpp"
 
 #include <string>
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 extern "C" bool dnnl_impl_gpu_mayiuse_ngen_kernels(dnnl_engine_t engine);
 

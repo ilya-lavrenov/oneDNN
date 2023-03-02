@@ -14,7 +14,7 @@
 * limitations under the License.
 *******************************************************************************/
 
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 #include "gpu/ocl/ocl_buffer_memory_storage.hpp"
 #include "gpu/ocl/ocl_engine.hpp"

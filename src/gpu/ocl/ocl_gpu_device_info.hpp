@@ -19,7 +19,7 @@
 
 #include <string>
 #include <vector>
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 #include "gpu/compute/device_info.hpp"
 #include "gpu/ocl/ocl_utils.hpp"

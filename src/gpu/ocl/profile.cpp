@@ -19,7 +19,7 @@
 #include <mutex>
 #include <utility>
 #include <vector>
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 #include <unordered_map>
 
 #include "gpu/ocl/profile.hpp"

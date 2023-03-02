@@ -1822,6 +1822,9 @@ public:
     Immediate(uint32_t imm) { shrinkUnsigned(imm); }
     Immediate(int32_t  imm) { shrinkSigned(imm); }
     Immediate(uint64_t imm) { shrinkUnsigned(imm); }
+#ifdef __APPLE__
+    Immediate(size_t imm) { shrinkUnsigned(imm); }
+#endif // __APPLE__
     Immediate(int64_t  imm) { shrinkSigned(imm); }
 
     Immediate(float    imm) { set(imm); }

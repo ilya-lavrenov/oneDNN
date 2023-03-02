@@ -17,7 +17,7 @@
 #ifndef GPU_OCL_OCL_BUFFER_MEMORY_STORAGE_HPP
 #define GPU_OCL_OCL_BUFFER_MEMORY_STORAGE_HPP
 
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 #include "common/c_types_map.hpp"
 #include "common/utils.hpp"

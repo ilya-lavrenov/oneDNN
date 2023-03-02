@@ -16,7 +16,7 @@
 
 #include <assert.h>
 #include <string>
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 #include "gpu/ocl/ocl_gpu_kernel.hpp"
 

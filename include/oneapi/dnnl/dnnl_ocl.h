@@ -27,7 +27,7 @@
 #define CL_TARGET_OPENCL_VERSION 120
 #endif
 
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 /// @endcond
 
 #ifdef __cplusplus

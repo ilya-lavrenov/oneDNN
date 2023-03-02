@@ -1137,10 +1137,10 @@ grid_execution_sig((_ref_rnn_common_t<aprop>::linear_execution)) {
             int lay = (aprop == prop_kind::forward) ? j : n_layer - j - 1;
 
             // offsets for fwd rnn gemm grid computation
-            cl_ulong offset_ws_layer, offset_wei_layer, offset_ws_iter;
+            size_t offset_ws_layer, offset_wei_layer, offset_ws_iter;
             // offsets for bwd rnn gemm grid computation
-            cl_ulong offset_diff_wei_iter, offset_diff_wei_lay,
-                    offset_scratch_diff_lay;
+            size_t offset_diff_wei_iter, offset_diff_wei_lay,
+                   offset_scratch_diff_lay;
 
             set_offsets_fwd_gemm(rnn, dir, lay, src_t, wei_layer_offset_ptr,
                     ws_states_offset_, offset_ws_layer, offset_wei_layer,

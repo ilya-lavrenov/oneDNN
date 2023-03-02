@@ -76,7 +76,7 @@ void *malloc(size_t size, int alignment) {
 } // namespace dnnl
 
 #if DNNL_GPU_RUNTIME == DNNL_RUNTIME_OCL
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 #include "gpu/ocl/ocl_gpu_engine.hpp"
 #include "gpu/ocl/ocl_memory_storage.hpp"

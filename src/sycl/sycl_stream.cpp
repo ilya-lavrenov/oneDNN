@@ -24,7 +24,7 @@
 
 #include <map>
 #include <memory>
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 namespace dnnl {
 namespace impl {

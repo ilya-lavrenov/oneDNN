@@ -17,7 +17,7 @@
 #ifndef GPU_OCL_OCL_USM_UTILS_HPP
 #define GPU_OCL_OCL_USM_UTILS_HPP
 
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 #include "common/engine.hpp"
 #include "common/stream.hpp"

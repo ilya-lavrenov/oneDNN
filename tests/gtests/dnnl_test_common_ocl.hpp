@@ -23,7 +23,7 @@
 #include "oneapi/dnnl/dnnl_ocl.hpp"
 #include "gtest/gtest.h"
 
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 // Define a separate macro, that does not clash with OCL_CHECK from the library.
 #ifdef DNNL_ENABLE_MEM_DEBUG

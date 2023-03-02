@@ -30,7 +30,7 @@
 
 #include "oneapi/dnnl/dnnl_ocl.h"
 
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 /// @endcond
 
 /// @addtogroup dnnl_api

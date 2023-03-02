@@ -54,7 +54,7 @@
 #include <numeric>
 #include <stdexcept>
 
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 #include "oneapi/dnnl/dnnl.hpp"
 #include "oneapi/dnnl/dnnl_ocl.hpp"

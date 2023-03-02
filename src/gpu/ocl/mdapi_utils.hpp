@@ -18,7 +18,7 @@
 #define GPU_OCL_MDAPI_UTILS_HPP
 
 #include <memory>
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 namespace dnnl {
 namespace impl {

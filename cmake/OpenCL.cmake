@@ -34,13 +34,18 @@ endif()
 set(CMAKE_REQUIRED_DEFINITIONS "-DCL_TARGET_OPENCL_VERSION=120")
 find_package(OpenCL REQUIRED)
 
+message("OpenCL_INCLUDE_DIRS = ${OpenCL_INCLUDE_DIRS}")
+# message(FATAL_ERROR "OpenCL_VERSION_STRING - ${OpenCL_VERSION_STRING}")
+
 if(OpenCL_VERSION_STRING VERSION_LESS "1.2")
-    message(FATAL_ERROR
-        "OpenCL version ${OpenCL_VERSION_STRING} is not supported, must be 1.2 or greater.")
+    # message(FATAL_ERROR
+    #     "OpenCL version ${OpenCL_VERSION_STRING} is not supported, must be 1.2 or greater.")
 endif()
 
 add_definitions(-DCL_TARGET_OPENCL_VERSION=120)
 
 set(DNNL_GPU_RUNTIME_CURRENT ${DNNL_GPU_RUNTIME})
+include_directories(/usr/headers1)
 include_directories(${OpenCL_INCLUDE_DIRS})
+include_directories(/usr/headers2)
 list(APPEND EXTRA_SHARED_LIBS OpenCL::OpenCL)

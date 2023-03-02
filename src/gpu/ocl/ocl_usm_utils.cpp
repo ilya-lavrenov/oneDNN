@@ -16,7 +16,7 @@
 
 #include <type_traits>
 
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 #include "common/cpp_compat.hpp"
 

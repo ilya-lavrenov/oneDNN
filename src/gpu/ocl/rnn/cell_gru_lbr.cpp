@@ -36,8 +36,8 @@ cell_execution_sig((_ref_rnn_common_t<aprop>::cell_execution_gru_lbr)) {
     const conf_t &rnn = this->pd()->rnn_conf;
     data_type_t src_t = this->pd()->src_type;
 
-    cl_ulong cell_scratch_offset, cell_ws_iter_offset, cell_ws_lay_offset,
-            cell_wei_iter_offset;
+    size_t cell_scratch_offset, cell_ws_iter_offset, cell_ws_lay_offset,
+           cell_wei_iter_offset;
 
     set_offsets_fwd_gemm(rnn, iter, dir, lay, src_t, wei_iter_offset_ptr,
             ws_states_offset_, cell_ws_iter_offset, cell_ws_lay_offset,
@@ -58,8 +58,8 @@ cell_execution_sig((_ref_rnn_common_t<aprop>::cell_execution_gru_lbr)) {
                 bias, tm_scales);
 
     } else {
-        cl_ulong cell_diff_wei_iter_off, cell_diff_wei_lay_off,
-                cell_scr_diff_iter_off, cell_scr_diff_lay_off;
+        size_t cell_diff_wei_iter_off, cell_diff_wei_lay_off,
+               cell_scr_diff_iter_off, cell_scr_diff_lay_off;
 
         set_offsets_bwd_gemm(rnn, iter, dir, lay, cell_diff_wei_iter_off,
                 cell_diff_wei_lay_off, cell_scr_diff_lay_off,

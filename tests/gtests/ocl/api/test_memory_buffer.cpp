@@ -23,7 +23,7 @@
 #include <algorithm>
 #include <memory>
 #include <vector>
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 namespace dnnl {
 

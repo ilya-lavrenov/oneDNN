@@ -298,15 +298,15 @@ private:
 
     // offset variables set in workspace and used in offset calculations for
     // grid & cell execution and fwd & bwd kernel macros
-    cl_ulong ws_gates_offset_;
-    cl_ulong ws_states_offset_;
-    cl_ulong ws_c_states_offset_;
-    cl_ulong ws_grid_comp_offset_;
-    cl_ulong ws_bias_offset_;
-    cl_ulong scratch_dhG1_offset_;
-    cl_ulong scratch_cell_offset_;
-    cl_ulong scratch_gates_offset_;
-    cl_ulong scratch_diff_states_offset_;
+    size_t ws_gates_offset_;
+    size_t ws_states_offset_;
+    size_t ws_c_states_offset_;
+    size_t ws_grid_comp_offset_;
+    size_t ws_bias_offset_;
+    size_t scratch_dhG1_offset_;
+    size_t scratch_cell_offset_;
+    size_t scratch_gates_offset_;
+    size_t scratch_diff_states_offset_;
 
     // ptrs for storing weight offsets which are pre-calculated in
     // in grid execution as weights_*_assing_func

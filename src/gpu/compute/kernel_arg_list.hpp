@@ -86,6 +86,12 @@ template <>
 struct scalar_type_traits<uint32_t> {
     static const auto type = scalar_type_t::_uint;
 };
+#ifdef __APPLE__
+template <>
+struct scalar_type_traits<size_t> {
+    static const auto type = scalar_type_t::_ulong;
+};
+#endif // __APPLE__
 template <>
 struct scalar_type_traits<uint64_t> {
     static const auto type = scalar_type_t::_ulong;

@@ -24,7 +24,7 @@
 #include <string>
 #include <utility>
 #include <vector>
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 #include <initializer_list>
 #include <type_traits>
 #include <unordered_map>

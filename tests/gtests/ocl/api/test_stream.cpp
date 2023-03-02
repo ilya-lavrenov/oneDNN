@@ -20,7 +20,7 @@
 #include <memory>
 #include "oneapi/dnnl/dnnl_ocl.h"
 #include "oneapi/dnnl/dnnl_ocl.hpp"
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 namespace dnnl {
 class ocl_stream_test_c_t : public ::testing::Test {

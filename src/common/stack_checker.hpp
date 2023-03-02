@@ -16,7 +16,7 @@
 
 #if defined(DNNL_ENABLE_STACK_CHECKER)
 
-#ifndef __linux__
+#ifdef _WIN32
 #error "Stack checker is supported only on Linux"
 #endif
 

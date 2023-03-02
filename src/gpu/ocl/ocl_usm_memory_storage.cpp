@@ -14,7 +14,7 @@
 * limitations under the License.
 *******************************************************************************/
 
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 #include "common/guard_manager.hpp"
 #include "gpu/ocl/ocl_usm_memory_storage.hpp"

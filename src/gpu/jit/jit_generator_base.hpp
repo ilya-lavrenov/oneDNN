@@ -18,7 +18,7 @@
 #define GPU_JIT_JIT_GENERATOR_BASE_HPP
 
 #include <vector>
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 namespace dnnl {
 namespace impl {

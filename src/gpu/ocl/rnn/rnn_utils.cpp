@@ -439,7 +439,7 @@ void rnn_utils::set_offsets_bwd_gemm(const conf_t &rnn, int iter, int dir,
     // Function overloaded. This function is called by grid execution and it
     // then calls set_offsets_bwd_gemm which is otherwise called in cell exec
     // scr is short for scratch
-    cl_ulong dummy_var;
+    size_t dummy_var;
     set_offsets_bwd_gemm(rnn, iter, dir, lay, cell_diff_wei_iter_off,
             cell_diff_wei_lay_off, cell_scr_diff_lay_off, dummy_var);
 }

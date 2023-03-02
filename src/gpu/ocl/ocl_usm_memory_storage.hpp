@@ -17,7 +17,7 @@
 #ifndef GPU_OCL_OCL_USM_MEMORY_STORAGE_HPP
 #define GPU_OCL_OCL_USM_MEMORY_STORAGE_HPP
 
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 #include <functional>
 

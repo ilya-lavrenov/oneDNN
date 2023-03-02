@@ -18,7 +18,7 @@
 #include <cstdio>
 #include <cstring>
 #include <mutex>
-#include <CL/cl_ext.h>
+#include <OpenCL/cl_ext.h>
 
 #include "gpu/ocl/ocl_gpu_engine.hpp"
 #include "gpu/ocl/ocl_gpu_kernel.hpp"
@@ -131,7 +131,7 @@ status_t get_ocl_devices(
 
     cl_int err = clGetPlatformIDs(0, nullptr, &num_platforms);
     // No platforms - a valid scenario
-    if (err == CL_PLATFORM_NOT_FOUND_KHR) return status::success;
+    // if (err == CL_PLATFORM_NOT_FOUND_KHR) return status::success;
 
     OCL_CHECK(err);
 

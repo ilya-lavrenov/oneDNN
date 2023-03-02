@@ -30,7 +30,7 @@ void DNNL_STRONG *malloc(size_t size, int alignment);
 } // namespace dnnl
 
 #if DNNL_GPU_RUNTIME == DNNL_RUNTIME_OCL
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 namespace dnnl {
 namespace impl {
 namespace gpu {

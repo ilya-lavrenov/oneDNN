@@ -19,7 +19,7 @@
 
 #include "ngen_config.hpp"
 
-#include <CL/cl.h>
+#include <OpenCL/cl.h>
 
 #include <atomic>
 #include <sstream>
